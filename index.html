@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Google Homepage</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<!--Header containing links to Google web pages and sign-in button-->
+  <header class="nav">
+    <ul>
+      <li>
+        <a href="https://about.google/" class="about">About</a>
+      </li>
+      <li>
+        <a href="https://g.co/kgs/a7YmXFo"class="store">Store</a>
+      </li>
+    </ul>
+      <div class="nav-div">
+        
+      </div>
+    <ul>
+      <li>
+        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"">Gmail</a>
+      </li>
+      <li>
+        <a href="https://images.google.com/">Images</a>
+      </li>
+        <li>
+          <a href="">
+            <img src="images/grid_dots_filled_icon_201372.png" id="nine-dots">
+          </a>
+        </li>
+        <a href="https://www.google.com/account/about/">
+          <button id="sign-in">
+            Sign In
+          </button>
+        </a>
+      </li>
+    </ul>
+  </header>
+  <!--Section containing the Google logo and a link to the Google Doodle animation-->
+  <section class="glogo">
+    <a href="https://doodles.google/doodle/gerald-jerry-lawsons-82nd-birthday/"><img src="images/jerry-lawsons-82nd-birthday-6753651837109552-2xa.gif" alt="Google Logo">
+  </section></a>
+<!--Form containing the search bar, icon images, and search buttons-->
+  <form id="search">
+    <input type="text" id="search-bar" placeholder="Search Google or type a URL">
+    <img src="images/search-grey-512.webp" id="srch-icon">
+    <img src="images/google-mic-microphone-icon-symbol-free-png.png" id="mic-icon">
+    <img src="images/google-camera-lens-icon-symbol-free-png.png" id="cam-icon">
+    <section class="srch-btns">
+      <input type="submit" value="Google Search" id="submit">
+      <button id="lucky-btn">
+        <a href= "https://www.google.com/doodles"> I'm Feeling Lucky
+        </a>
+      </button>
+    </section>
+  </form>
+ <!--Footer containing links to Google web pages-->
+  <footer class="footer">
+    <ul>
+      <li>
+        <a href="https://g.co/kgs/6oRkssD">Advertising</a>
+      </li>    
+      <li>
+        <a href="https://g.co/kgs/t74jLKX">Business</a>
+      </li>
+      <li>
+        <a href="https://g.co/kgs/XQDpZE3">How Search Works</a>
+      </li>
+    </ul>
+    <div class="footer-div">
+      
+    </div>
+    <ul>
+      <li>
+        <a href="https://sustainability.google/">Our third decade of climate action: join us</a>
+      </li>
+    </ul>
+    <div class="footer-div">
+      
+    </div>
+    <ul>
+      <li>
+        <a href="https://g.co/kgs/U3ss7UA">Privacy</a>
+      <li>
+        <a href="https://g.co/kgs/U3ss7UA">Terms</a>
+      </li>
+      <li>
+        <a href="https://g.co/kgs/4kkjYX3">Settings</a>
+      </li>
+    </ul> 
+  </footer>
+  
+  <script src="script.js">
+    let buttonSearch = document.getElementById("submit")
+    let inputVals = document.getElementById("search-bar") 
+    buttonSearch.addEventListener("click", function displayE(){
+      window.alert(inputVals.value)
+    }) 
+  </script>
+</body>
+
+</html>
